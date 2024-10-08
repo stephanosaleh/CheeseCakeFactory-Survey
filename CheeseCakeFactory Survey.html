@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STEPHANOCheesecakeFactory Survey</title>
+    <link rel="stylesheet">
+</head>
+<style>
+body {
+    background-image: url('https://i.imgur.com/b2CEXcT.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+   background-attachment: fixed;
+  min-height: 100%;
+}
+
+form {
+   
+    width:650px;
+    margin: auto;
+    padding: 25px;
+    background-color: rgba(75, 67, 106, 0.7); /* Transparent background color */
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 1em auto;
+    text-align: center;
+    font-size:45px;
+    font-family:"Acta Display W01 Book";
+}
+
+p {
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    padding:25px;
+    font-size:18px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 15px; /* Reduced padding */
+    font-size: 18px;
+    font-family: Arial;
+}
+
+input,
+textarea,
+select {
+    margin: 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid grey;
+    color: grey;
+}
+
+.inline {
+ width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+.reduce-spacing {
+    padding:1px; /* Reduce the bottom margin for the specific label */
+}
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  font-size: 1.1rem;
+  background-color: white4;
+  border-color: white;
+  min-width: 300px;
+</style>
+<body>
+    <h1 id="title">CheesecakeFactory Survey</h1>
+    <p id="description">Thank you for taking this survey :)</p>
+    <form id="survey-form">
+        <label for="name-label" id="name-label">Name</label>
+        <input required type="text" id="name" placeholder="Enter your name" name="name">
+
+        <label for="email-label" id="email-label">Email</label>
+        <input required type="email" id="email" placeholder="Enter your Email" name="email">
+
+        <label for="number-label" id="number-label">Age (optional)</label>
+        <input type="number" id="number" placeholder="Age" min="10" max="80">
+
+        <label for="history">Which option represents your history as a customer</label>
+        <select id="dropdown">
+            <option>New Customer</option>
+            <option>Regular</option>
+            <option>Been here from the start!</option>
+        </select>
+
+<label>Would you recommend Cheesecake Factory?</label>
+        <label  class="reduce-spacing" for="rec"><input id="Definitely" type="radio" name="rec" class="inline" checked value="Definitely"/> Definitely</label>
+        <label  class="reduce-spacing" for="rec"><input id="Maybe" type="radio" name="rec" class="inline" value="Maybe" /> Maybe</label>
+     <label  class="reduce-spacing" for="rec"><input id="No" type="radio" name="rec" value="No" class="inline" /> No</label>
+        <label for="history">How did you hear about us?</label>
+        <select id="dropdown">
+            <option>Social Media</option>
+            <option>Friends/Family</option>
+            <option>Advertisement</option>
+            <option>Walk-in</option>
+            <option>Other</option>
+        </select>
+<label>Choose your favorites! </label>
+        <label  class="reduce-spacing" for="fav"><input value="Original" id="Original" type="checkbox" name="fav" class="inline" />Original</label>
+        <label  class="reduce-spacing" for="fav"><input value="Fresh Strawberry" id="Fresh Strawberry" type="checkbox" name="fav" class="inline" />Fresh Strawberry</label>
+<label  class="reduce-spacing" for="fav"><input value="Oreo® Dream Extreme Cheesecake" id="Oreo® Dream Extreme Cheesecake" type="checkbox" name="fav" class="inline" />Oreo® Dream Extreme Cheesecake</label>
+<label  class="reduce-spacing" for="fav"><input value="Ultimate Red Velvet Cake Cheesecake™" id="Ultimate Red Velvet Cake Cheesecake™" type="checkbox" name="fav" class="inline" />Ultimate Red Velvet Cake Cheesecake™</label>
+        <label  class="reduce-spacing" for="fav"><input value="Reese’s® Peanut Butter Chocolate Cake Cheesecake" id="Reese’s® Peanut Butter Chocolate Cake Cheesecake" type="checkbox" name="fav" class="inline" />Reese’s® Peanut Butter Chocolate Cake Cheesecake</label>
+            <label  class="reduce-spacing" for="fav"><input value="Cookie Dough Lover's Cheesecake with Pecans" id="Cookie Dough Lover's Cheesecake with Pecans" type="checkbox" name="fav" class="inline" />Cookie Dough Lover's Cheesecake with Pecans</label>
+            <label  class="reduce-spacing" for="fav"><input value="Other" id="Other" type="checkbox" name="fav" class="inline" />Other</label>
+    <label>Any additional comments or feedback?</label>
+    <textarea placeholder="Write us a comment :)" cols="30" rows="3">
+        </textarea>
+        <input type="submit" value="Submit" id="submit" />        
+    </form>
+</body>
+</html>
